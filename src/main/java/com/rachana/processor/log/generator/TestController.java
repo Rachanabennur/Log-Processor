@@ -15,9 +15,6 @@ public class TestController {
 
     @GetMapping("/write")
     public void write() throws IOException {
-        for(int i=0; i<10; i++){
-            logFileGenerator.writeWithWriter("Dummy error", "INFO");
-        }
-
+            logFileGenerator.generateRandomLogs(200L);
     }
 }
